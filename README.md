@@ -41,7 +41,7 @@ data:
    │email,password,org,roles                                     │
    │admin@app.com, password,app,                                 │
    │demo1@app.com,demo1,app,nlpUser|botUser|admin|technicalAdmin │
-   │demo2@app.com,arnauddemo2,demo,                              │
+   │demo2@app.com,demo2,demo,                                    │
    │                                                             │
    └──────────────────────────┳──────────────────────────────────┘
                               ┃
@@ -60,9 +60,15 @@ data:
    │    app.kubernetes.io/component: admin-web                    │
    │data:                                                         │
    │  tock_users: "admin@app.com,demo1@app.com,demo2@app.com"     │
-   │  tock_passwords: " password,demo1,arnauddemo2"               │
+   │  tock_passwords: " password,demo1,demo2"                     │
    │  tock_organizations: "app,app,demo"                          │
    │  tock_roles: ",nlpUser|botUser|admin|technicalAdmin,"        │
    │                                                              │
    └──────────────────────────────────────────────────────────────┘
 ```
+
+## Tock Roles
+
+Information about available roles can be found in Tock documentation:
+
+https://doc.tock.ai/tock/master/admin/security.html#roles
