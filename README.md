@@ -72,3 +72,16 @@ data:
 Information about available roles can be found in Tock documentation:
 
 https://doc.tock.ai/tock/master/admin/security.html#roles
+
+
+## Build
+
+```shell
+go mod tidy
+go build
+````
+or 
+
+```shell
+make build
+```
