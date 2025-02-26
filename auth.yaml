@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: admin-web-auth-cfg
+  labels:
+    app.kubernetes.io/name: admin-web-auth
+    app.kubernetes.io/component: admin-web
+data:
+  tock_users: "admin@app.com,demo1@app.com,demo2@app.com"
+  tock_passwords: " password,demo1,arnauddemo2"
+  tock_organizations: "app,app,demo"
+  tock_roles: ",nlpUser|botUser|admin|technicalAdmin,"

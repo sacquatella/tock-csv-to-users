@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: admin-web-auth-cfg
+  labels:
+    app.kubernetes.io/name: admin-web-auth
+    app.kubernetes.io/component: admin-web
+data:
+  tock_users:  "admin@app.com,demo1@app.com,demo2@app.com" # Identifiants (séparés par des virgules). Valeur par defaut `admin@app.com`
+  tock_passwords: "password,demo1,demo2" # Mots de passe (séparés par des virgules). Valleur par defaut `password`` 
+  tock_organizations: "app,app,demo" # Organisations (séparées par des virgules). Valleur par defaut `app``
+  tock_roles: ",nlpUser|botUser|admin|technicalAdmin,admin," #  Rôles séparés par des | (puis par des virgules). Valeur par defaut vide , Dans cet exemple, Alice a le rôle botUser, alors que Bob a tous les rôles.

@@ -1,0 +1,4 @@
+email,password,org,roles
+admin@app.com, password,app,
+demo1@app.com,demo1,app,nlpUser|botUser|admin|technicalAdmin
+demo2@app.com,arnauddemo2,demo,
