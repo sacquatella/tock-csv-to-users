@@ -1,2 +1,4 @@
 bin/
 tock-csv-to-users
+tmp/
+output.yaml
